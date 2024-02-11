@@ -5,9 +5,9 @@ import React from 'react';
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-[#E5E7EB] p-4 flex justify-between items-center px-12">
+    <header className="bg-[#E5E7EB] p-4 flex justify-between items-center px-2 lg:px-12">
       <div className="flex items-center">
-        <img src="/logo.png" alt="Logo" className="h-8 mr-8" />
+        <img src="/logo.png" alt="Logo" className="h-8 mr-8 sm:block hidden" />
         <div className="relative">
           <span className="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400">
             <BsSearch className="h-4 w-4" />
@@ -15,12 +15,12 @@ const Header: React.FC = () => {
           <input
             type="text"
             placeholder="Search for location"
-            className="pl-8 pr-3 w-[350px] py-2 text-sm rounded-full bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:border-blue-400 shadow-sm"
+            className="pl-8 pr-3 w-[150px] lg:w-[350px] py-2 text-sm rounded-full bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:border-blue-400 shadow-sm"
           />
         </div>
       </div>
       <div className="flex items-center">
-        <div className="flex items-center mr-8">
+        <div className="hidden md:flex items-center mr-8">
           <IoIosCall className="text-gray-800 mr-1" />
           <span className="text-gray-800">+91 8369003785</span>
         </div>
